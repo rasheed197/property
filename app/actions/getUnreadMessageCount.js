@@ -13,7 +13,7 @@ async function getUnreadMessageCount() {
 
   const { userId } = sessionUser;
 
-  const count = useId ? await Message.countDocuments({
+  const count = userId ? await Message.countDocuments({
     recipient: userId,
     read: false,
   }) : 0;

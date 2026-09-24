@@ -21,8 +21,8 @@ const PropertyContactForm = ({ property }) => {
 
   return (
     session && (
-      <div class="bg-white p-6 rounded-lg shadow-md">
-        <h3 class="text-xl font-bold mb-6">Contact Property Manager</h3>
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <h3 className="text-xl font-bold mb-6">Contact Property Manager</h3>
         <form action={formAction}>
           <input
             type="hidden"
@@ -52,15 +52,15 @@ const PropertyContactForm = ({ property }) => {
               required
             />
           </div>
-          <div class="mb-4">
+          <div className="mb-4">
             <label
-              class="block text-gray-700 text-sm font-bold mb-2"
+              className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="email"
             >
               Email:
             </label>
             <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="email"
               type="email"
               name="email"
@@ -83,15 +83,15 @@ const PropertyContactForm = ({ property }) => {
               placeholder="Enter your phone number"
             />
           </div>
-          <div class="mb-4">
+          <div className="mb-4">
             <label
-              class="block text-gray-700 text-sm font-bold mb-2"
+              className="block text-gray-700 text-sm font-bold mb-2"
               htmlFor="body"
             >
               Message:
             </label>
             <textarea
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline"
               id="body"
               name="body"
               placeholder="Enter your message"
